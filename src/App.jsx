@@ -25,8 +25,6 @@ const MainContent = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audio = new Audio("/hope-you-comeback.mp3");
 
-  const sectionsRef = useRef([]);
-
   const ToglePlay = () => {
     setIsPlaying((prev) => !prev);
   };
@@ -141,9 +139,31 @@ const MainContent = () => {
               <div className=" px-[16px]  relative z-[10] ">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="relative z-[2] h-[100vh] flex items-center justify-center ">
-                  <div>
-                    <h1 className="text-[#A2803B] text-[38px] text-center uppercase font-bold leading-[120%]">
-                      iNiViEnity Night Gathering
+                  <div className="overflow-hidden">
+                    <h1
+                      className={`text-[#A2803B]  text-[38px] text-center uppercase font-bold leading-[120%]   `}
+                    >
+                      <span
+                        className={`inline-block opacity-0 ${
+                          isOpen && "animate-upIn"
+                        }`}
+                      >
+                        iNiViEnity
+                      </span>{" "}
+                      <span
+                        className={`inline-block opacity-0 ${
+                          isOpen && "animate-leftIn"
+                        }`}
+                      >
+                        Night
+                      </span>{" "}
+                      <span
+                        className={`inline-block opacity-0 ${
+                          isOpen && "animate-bottomIn"
+                        }`}
+                      >
+                        Gathering
+                      </span>{" "}
                     </h1>
                     <p className="mt-[20px] text-white text-center text-[15px] tracking-[1px] leading-[180%]">
                       We are thrilled to invite you to a special iNiViEnity
@@ -154,7 +174,7 @@ const MainContent = () => {
                 </div>
               </div>
               <div className="absolute bottom-10 w-full flex justify-center z-[200]">
-                <a href="/#section2">
+                <a href={`/${location.search}#section2`}>
                   <div className="mouse-down" />
                 </a>
               </div>
@@ -355,7 +375,7 @@ const MainContent = () => {
                       </div>
                       <div className="mt-[20px]">
                         <a
-                          href="/#section2"
+                          href={`/${location.search}#section2`}
                           className="rounded-full inline-block p-[8px] border-[#A2803B] border-[1px]"
                         >
                           <FaChevronUp className="text-white text-[12px] animate-bounce1" />

@@ -291,5 +291,50 @@ body {
   }
 }
 .animate-bounce1 {
-  animation: bounce1 1s infinite linear;
+  animation: bounce1 1s infinite;
+}
+
+@keyframes upIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.animate-upIn {
+  animation: upIn 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes leftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.animate-leftIn {
+  animation: leftIn 1s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes bottomIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.animate-bottomIn {
+  animation: bottomIn 1s ease-out forwards;
+  animation-delay: 2s;
 }
