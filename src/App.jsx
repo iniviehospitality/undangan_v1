@@ -199,8 +199,8 @@ const MainContent = () => {
               <div className="px-[16px] relative z-[10] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="flex justify-center items-center relative z-[3] h-full ">
-                  <div className="w-full relative h-[400px]">
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[400px] absolute top-0 z-0" />
+                  <div className="w-full relative h-[400px] animate-scaleUp opacity-0">
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[400px] absolute top-0 z-0 " />
                     <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center">
                         GATHERING EVENT
