@@ -32,7 +32,7 @@ const MainContent = () => {
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const nama = queryParams.get("nama");
+  const nama = queryParams.get("to");
   const openingRef = useRef(null);
   const [isOpen, setIsopen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
