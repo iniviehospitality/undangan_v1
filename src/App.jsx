@@ -9,7 +9,8 @@ import { FaMotorcycle } from "react-icons/fa";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
 import { TbAirConditioning } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
-import { RiMotorbikeLine } from "react-icons/ri";
+import { RiShoppingBag3Line } from "react-icons/ri";
+import { CiGift } from "react-icons/ci";
 
 import {
   BrowserRouter as Router,
@@ -216,26 +217,29 @@ const MainContent = () => {
                     ref={sc1Ref}
                     className={`${
                       sc1View ? "animate-scaleUp" : ""
-                    } w-full relative h-[400px]  opacity-0`}
+                    } w-full relative h-[480px]  opacity-0`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[440px] absolute top-0 z-0 " />
-                    <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full pt-10">
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[480px] absolute top-0 z-0 " />
+                    <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center">
                         GATHERING EVENT
                       </h2>
                       <div className="mt-[20px]">
-                        <div className="text-white flex items-center gap-2  mb-[15px]">
+                        <div className="text-white flex items-center gap-2  mb-5">
                           <FaMapLocation className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
                             Bali Sunset Convention Center
                           </p>
                         </div>
-                        <div className="text-white flex items-center gap-2 mb-[15px] ">
+                        <div className="text-white flex items-center gap-2">
                           <FaCalendarDays className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
                             April 28th & 29th, 2025
                           </p>
                         </div>
+                        <p className="text-white text-center tracking-wider mb-4">
+                          Start 05:00 PM
+                        </p>
                         <div className="text-white flex items-center gap-2 ">
                           <GiClothes className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
@@ -301,12 +305,12 @@ const MainContent = () => {
                 <div className="flex justify-center items-center relative z-[3] h-full ">
                   <div
                     ref={sc2Ref}
-                    className={`w-full relative h-[450px] ${
+                    className={`w-full relative h-[590px] ${
                       sc2View ? "animate-scaleUp" : ""
                     }`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[500px] absolute top-0 z-0 " />
-                    <div className="relative z-10 pt-[20px] flex items-center justify-center flex-col h-full ">
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[590px] absolute top-0 z-0 " />
+                    <div className="relative z-10 py-[10px] px-5 flex items-center justify-center flex-col h-full ">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center uppercase">
                         Grand Door Prizes
                       </h2>
@@ -317,22 +321,28 @@ const MainContent = () => {
                             6 Motorcycles
                           </p>
                         </div>
-                        <div className="text-white flex items-center gap-2  mb-[15px]">
-                          <RiMotorbikeLine className="text-[24px] text-[#aba7a7]" />
-                          <p className="text-[18px] tracking-[1px] font-bold">
-                            2 Electric Motorcycles
-                          </p>
-                        </div>
                         <div className="text-white flex items-center gap-2 mb-[15px] ">
                           <CgSmartHomeRefrigerator className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
                             2 Refrigerators
                           </p>
                         </div>
-                        <div className="text-white flex items-center gap-2 ">
+                        <div className="text-white flex items-center gap-2 mb-[15px] ">
                           <TbAirConditioning className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
                             2 Air Conditioners
+                          </p>
+                        </div>
+                        <div className="text-white flex items-center gap-2  mb-[15px]">
+                          <CiGift className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
+                            70 Mini Doorprizes
+                          </p>
+                        </div>
+                        <div className="text-white flex items-center gap-2  mb-[15px]">
+                          <RiShoppingBag3Line className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
+                            Goodie Bag for All the Guests
                           </p>
                         </div>
                       </div>
