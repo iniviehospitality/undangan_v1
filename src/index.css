@@ -350,6 +350,5 @@ body {
   }
 }
 .animate-scaleUp {
-  animation: scaleUp 1s ease-out forwards;
-  animation-delay: 4s;
+  animation: scaleUp 1.2s ease-out forwards;
 }

@@ -15,8 +15,21 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-
+import { useInView } from "react-intersection-observer";
 const MainContent = () => {
+  const { ref: sc1Ref, inView: sc1View } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+  const { ref: sc2Ref, inView: sc2View } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+  const { ref: sc3Ref, inView: sc3View } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const nama = queryParams.get("nama");
@@ -199,7 +212,12 @@ const MainContent = () => {
               <div className="px-[16px] relative z-[10] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="flex justify-center items-center relative z-[3] h-full ">
-                  <div className="w-full relative h-[400px] animate-scaleUp opacity-0">
+                  <div
+                    ref={sc1Ref}
+                    className={`${
+                      sc1View ? "animate-scaleUp" : ""
+                    } w-full relative h-[400px]  opacity-0`}
+                  >
                     <div className="bg-white bg-opacity-20 blur-sm w-full h-[400px] absolute top-0 z-0 " />
                     <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center">
@@ -230,7 +248,10 @@ const MainContent = () => {
                         <p className="text-white text-center text-[15px] font-bold tracking-[1px] mt-[20px] ">
                           <span className="text-[#A2803B]">Participants</span>{" "}
                           all team members who joined iNi ViE Hospitality on or
-                          before January 21st, 2025.
+                          <span className="text-[#A2803B]">
+                            {" "}
+                            before January 21st, 2025.
+                          </span>{" "}
                         </p>
                       </div>
 
@@ -268,7 +289,12 @@ const MainContent = () => {
               <div className="px-[16px] relative z-[10] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="flex justify-center items-center relative z-[3] h-full ">
-                  <div className="w-full relative h-[450px]">
+                  <div
+                    ref={sc2Ref}
+                    className={`w-full relative h-[450px] ${
+                      sc2View ? "animate-scaleUp" : ""
+                    }`}
+                  >
                     <div className="bg-white bg-opacity-20 blur-sm w-full h-[450px] absolute top-0 z-0" />
                     <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center uppercase">
@@ -359,7 +385,12 @@ const MainContent = () => {
               <div className="px-[16px] relative z-[10] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="flex justify-center items-center relative z-[3] h-full ">
-                  <div className="w-full relative h-[400px]">
+                  <div
+                    ref={sc3Ref}
+                    className={`w-full relative h-[400px] ${
+                      sc3View ? "animate-scaleUp" : ""
+                    }`}
+                  >
                     <div className="bg-white bg-opacity-20 blur-sm w-full h-[400px] absolute top-0 z-0" />
                     <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] leading-[120%] font-bold text-[32px] text-center uppercase">
