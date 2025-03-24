@@ -9,6 +9,8 @@ import { FaMotorcycle } from "react-icons/fa";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
 import { TbAirConditioning } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
+import { RiMotorbikeLine } from "react-icons/ri";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -108,7 +110,7 @@ const MainContent = () => {
                     <p className=" text-white text-[14px] leading-none">
                       Dear.
                     </p>
-                    <h1 className="text-[#A2803B] text-[28px] tracking-[1px] capitalize leading-[120%]">
+                    <h1 className="text-white text-[24px] tracking-[1px] capitalize leading-[120%] py-2 font-bold">
                       {nama}
                     </h1>
                   </div>
@@ -119,9 +121,9 @@ const MainContent = () => {
                         ToglePlay();
                         setIsopen(true);
                       }}
-                      className="bg-[#A2803B] tracking-[1px] text-[13px] text-white px-[20px] py-[5px] rounded-full flex items-center gap-[5px]"
+                      className="bg-[#A2803B] tracking-[1px] text-[14px] text-white px-[25px] py-[10px] font-bold uppercase flex items-center gap-[5px]"
                     >
-                      <HiOutlineMailOpen className="text-[16px]" />
+                      <HiOutlineMailOpen className="text-[20px]" />
                       Open Invitation
                     </button>
                   </div>
@@ -143,12 +145,11 @@ const MainContent = () => {
                 />
               </div>
             </div>
-
             {/* logo spin */}
 
             {/* section1 */}
             <section className="relative overflow-hidden">
-              <div className="absolute z-0 bg-[url('/grid.webp')] w-full h-[100vh] bg-cover bg-center inset-0 opacity-40 scale-110 " />
+              <div className="absolute z-0 bg-[url('/grid.webp')] w-full h-[100vh] bg-cover bg-center inset-0 opacity-15 scale-110 " />
               <div className=" px-[16px]  relative z-[10] ">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="relative z-[2] h-[100vh] flex items-center justify-center ">
@@ -197,7 +198,7 @@ const MainContent = () => {
             {/* section2 */}
             <section id="section2" className="relative overflow-hidden">
               {/* logo spin */}
-              <div className="absolute top-[-75px]  right-[-75px] z-[1]">
+              <div className="absolute top-[-70px]  right-[-75px] z-[1]">
                 <div>
                   <img
                     src="/pattern-logo.png"
@@ -206,10 +207,9 @@ const MainContent = () => {
                   />
                 </div>
               </div>
-
               {/* logo spin */}
               <div className="bg-[url('/gajah-potrait.webp')] w-full inset-0 bg-cover bg-center absolute z-0 opacity-40" />
-              <div className="px-[16px] relative z-[10] h-[100vh]">
+              <div className="px-[16px] relative z-[11] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
                 <div className="flex justify-center items-center relative z-[3] h-full ">
                   <div
@@ -218,48 +218,58 @@ const MainContent = () => {
                       sc1View ? "animate-scaleUp" : ""
                     } w-full relative h-[400px]  opacity-0`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[400px] absolute top-0 z-0 " />
-                    <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[440px] absolute top-0 z-0 " />
+                    <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full pt-10">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center">
                         GATHERING EVENT
                       </h2>
                       <div className="mt-[20px]">
                         <div className="text-white flex items-center gap-2  mb-[15px]">
-                          <FaMapLocation className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
+                          <FaMapLocation className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
                             Bali Sunset Convention Center
                           </p>
                         </div>
                         <div className="text-white flex items-center gap-2 mb-[15px] ">
-                          <FaCalendarDays className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
+                          <FaCalendarDays className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
                             April 28th & 29th, 2025
                           </p>
                         </div>
                         <div className="text-white flex items-center gap-2 ">
-                          <GiClothes className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
-                            Semi-formal black dress and suit
+                          <GiClothes className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
+                            Formal Black Dress and Suite
                           </p>
                         </div>
+                        <p className="text-white text-center tracking-wider">
+                          (Minimum Long sleeve shirt)
+                        </p>
                       </div>
 
                       <div className="mt-[10px] max-w-[300px]">
-                        <p className="text-white text-center text-[15px] font-bold tracking-[1px] mt-[20px] ">
-                          <span className="text-[#A2803B]">Participants</span>{" "}
-                          all team members who joined iNi ViE Hospitality on or
-                          <span className="text-[#A2803B]">
+                        <p className="text-white text-center text-[18px]  tracking-[1px] mt-[20px]  ">
+                          Participants all team members who joined iNi ViE
+                          Hospitality
+                          <span className="text-[#A2803B] font-bold">
                             {" "}
-                            before January 21st, 2025.
+                            before 14 April 2025
                           </span>{" "}
                         </p>
                       </div>
 
-                      <div className="flex justify-center mt-[30px]">
+                      <div className="flex justify-center mt-[30px] gap-x-5">
+                        {/* <a
+                          href="#"
+                          target="_blank"
+                          className="bg-[#A2803B] tracking-[1px] text-[16px] text-white px-[25px] py-[10px]  font-bold"
+                        >
+                          Save the date
+                        </a> */}
                         <a
                           href="https://maps.app.goo.gl/6imY5jLt5eqKHanH6"
                           target="_blank"
-                          className="bg-[#A2803B] tracking-[1px] text-[13px] text-white px-[20px] py-[5px] rounded-full font-bold"
+                          className="bg-[#A2803B] tracking-[1px] text-[16px] text-white px-[25px] py-[10px]  font-bold"
                         >
                           Google Maps
                         </a>
@@ -283,8 +293,8 @@ const MainContent = () => {
                   />
                 </div>
               </div>
-
               {/* logo spin */}
+
               <div className="bg-[url('/gajah-potrait.webp')] w-full inset-0 bg-cover bg-center absolute z-0 opacity-40" />
               <div className="px-[16px] relative z-[10] h-[100vh]">
                 <div className="bg-black  opacity-40 absolute inset-0 w-full" />
@@ -295,70 +305,80 @@ const MainContent = () => {
                       sc2View ? "animate-scaleUp" : ""
                     }`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[450px] absolute top-0 z-0" />
-                    <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[500px] absolute top-0 z-0 " />
+                    <div className="relative z-10 pt-[20px] flex items-center justify-center flex-col h-full ">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center uppercase">
                         Grand Door Prizes
                       </h2>
                       <div className="mt-[20px]">
                         <div className="text-white flex items-center gap-2  mb-[15px]">
-                          <FaMotorcycle className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
-                            6 Motorcycles & 2 Electric Motorcycles
+                          <FaMotorcycle className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
+                            6 Motorcycles
+                          </p>
+                        </div>
+                        <div className="text-white flex items-center gap-2  mb-[15px]">
+                          <RiMotorbikeLine className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
+                            2 Electric Motorcycles
                           </p>
                         </div>
                         <div className="text-white flex items-center gap-2 mb-[15px] ">
-                          <CgSmartHomeRefrigerator className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
+                          <CgSmartHomeRefrigerator className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
                             2 Refrigerators
                           </p>
                         </div>
                         <div className="text-white flex items-center gap-2 ">
-                          <TbAirConditioning className="text-[22px] text-[#aba7a7]" />
-                          <p className="text-[15px] tracking-[1px] font-bold">
+                          <TbAirConditioning className="text-[24px] text-[#aba7a7]" />
+                          <p className="text-[18px] tracking-[1px] font-bold">
                             2 Air Conditioners
                           </p>
                         </div>
                       </div>
 
                       <div className="mt-[30px] flex flex-col gap-[5px] max-w-[350px]">
-                        <p className="text-white  text-center text-[15px] font-bold tracking-[1px]  ">
+                        <p className="text-white  text-left text-[16px]  tracking-[1px]  ">
                           To be eligible for the gifts and doorprizes,{" "}
-                          <span className="text-[#A2803B]">
+                          <span className="text-[#A2803B] font-bold">
                             please follow these steps:
                           </span>
                         </p>
-                        <p className="text-[15px] text-white tracking-[1px] font-bold text-center">
-                          Follow the official Instagram accounts
-                        </p>
-
-                        <div className="flex justify-center gap-[10px]">
-                          <a href="#" className="flex gap-[5px]">
-                            <FaInstagram className="text-[22px] text-[#aba7a7]" />
-                            <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
-                              @lifeatinivie
+                        <ol className="list-decimal text-white pl-[10px]">
+                          <li className="mt-5">
+                            <p className="text-[15px] text-white tracking-[1px]">
+                              Follow the official Instagram accounts
                             </p>
-                          </a>
+                            <div className="flex justify-start gap-[10px] mt-2">
+                              <a href="#" className="flex gap-[5px]">
+                                <FaInstagram className="text-[18px] text-[#aba7a7]" />
+                                <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
+                                  @lifeatinivie
+                                </p>
+                              </a>
 
-                          <a href="#" className="flex gap-[5px]">
-                            <FaInstagram className="text-[22px] text-[#aba7a7]" />
-                            <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
-                              @iniviehospitality
-                            </p>
-                          </a>
-                        </div>
-
-                        <div className="text-[15px] text-white tracking-[1px] font-bold text-center">
-                          Join the{" "}
-                          <a
-                            href="https://booking.inivie.com/register?_gl=1*1b0xdu6*_gcl_au*NjU5NjA2NDI0LjE3MzU1NDY0ODkuMTAxMzE4NDU5OS4xNzQyMzY1MzMwLjE3NDIzNjYzMTQ."
-                            target="_blank"
-                            className="text-[#A2803B] font-bold"
-                          >
-                            WinieVie
-                          </a>{" "}
-                          membership program.
-                        </div>
+                              <a href="#" className="flex gap-[5px]">
+                                <FaInstagram className="text-[18px] text-[#aba7a7]" />
+                                <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
+                                  @iniviehospitality
+                                </p>
+                              </a>
+                            </div>
+                          </li>
+                          <li className="mt-5">
+                            <span className="text-[15px] text-white tracking-[1px]  mt-5">
+                              Join the{" "}
+                              <a
+                                href="https://booking.inivie.com/register"
+                                target="_blank"
+                                className="text-[#A2803B] font-bold"
+                              >
+                                WeiNiViE Reward
+                              </a>{" "}
+                              membership program.
+                            </span>
+                          </li>
+                        </ol>
                       </div>
                     </div>
                   </div>
@@ -397,10 +417,10 @@ const MainContent = () => {
                         We look forward to celebrating with you!
                       </h2>
                       <div className="mt-[20px]">
-                        <p className="text-[15px] text-center  text-white tracking-[1px] font-bold">
+                        <p className="text-[18px] text-center  text-white tracking-[1px] ">
                           Warm regards,
                         </p>
-                        <p className="text-[15px]  text-white  text-center  tracking-[1px] font-bold">
+                        <p className="text-[18px]  text-white  text-center  tracking-[1px]">
                           The iNi ViE Hospitality Team
                         </p>
                       </div>
