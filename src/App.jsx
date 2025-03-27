@@ -225,30 +225,42 @@ const MainContent = () => {
                         GATHERING EVENT
                       </h2>
                       <div className="mt-[20px]">
-                        <div className="text-white flex items-center gap-2  mb-5">
+                        <div className="text-white flex items-center gap-4  mb-5">
                           <FaMapLocation className="text-[24px] text-[#aba7a7]" />
                           <p className="text-[18px] tracking-[1px] font-bold">
                             Bali Sunset Convention Center
                           </p>
                         </div>
-                        <div className="text-white flex items-center gap-2">
+                        <div className="text-white flex items-center gap-4 mb-4">
                           <FaCalendarDays className="text-[24px] text-[#aba7a7]" />
-                          <p className="text-[18px] tracking-[1px] font-bold">
-                            April 28th & 29th, 2025
-                          </p>
+                          <div>
+                            <p className="text-[18px] tracking-[1px] font-bold">
+                              April 28th & 29th, 2025
+                            </p>
+                            <p className="text-white text-[14px]  tracking-wider ">
+                              Start 05:00 PM
+                            </p>
+                          </div>
                         </div>
-                        <p className="text-white text-center tracking-wider mb-4">
-                          Start 05:00 PM
-                        </p>
-                        <div className="text-white flex items-center gap-2 ">
+
+                        <div className="text-white flex items-center gap-4 ">
                           <GiClothes className="text-[24px] text-[#aba7a7]" />
-                          <p className="text-[18px] tracking-[1px] font-bold">
-                            Formal Black Dress and Suite
-                          </p>
+                          <div>
+                            <p className="text-[18px] text-white  tracking-[1px] font-bold">
+                              Formal Black Dress{" "}
+                              <span className="font-normal text-[14px]">
+                                (for Women)
+                              </span>{" "}
+                              &
+                            </p>
+                            <p className="text-white text-[18px] font-bold  tracking-wider">
+                              Suite{" "}
+                              <span className="font-normal text-[14px]">
+                                (Minimum Long Sleeve Shirt for Men)
+                              </span>
+                            </p>
+                          </div>
                         </div>
-                        <p className="text-white text-center tracking-wider">
-                          (Minimum Long sleeve shirt)
-                        </p>
                       </div>
 
                       <div className="mt-[10px] max-w-[300px]">
@@ -257,7 +269,7 @@ const MainContent = () => {
                           Hospitality
                           <span className="text-[#A2803B] font-bold">
                             {" "}
-                            before 14 April 2025
+                            before 14 January 2025
                           </span>{" "}
                         </p>
                       </div>
