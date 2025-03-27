@@ -264,7 +264,7 @@ const MainContent = () => {
                       </div>
 
                       <div className="mt-[10px] max-w-[380px]">
-                        <p className="text-white text-center text-[18px]  tracking-[1px] mt-[20px]  ">
+                        <p className="text-white text-center text-[14px]  tracking-[1px] mt-[20px]  ">
                           Participation is exclusive to iNi ViE Hospitality team
                           members (Staff/DW only, exclude trainee) who became
                           part of our family maximum on
