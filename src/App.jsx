@@ -254,7 +254,7 @@ const MainContent = () => {
                               &
                             </p>
                             <p className="text-white text-[18px] font-bold  tracking-wider">
-                              Suit{" "}
+                              Black Suit{" "}
                               <span className="font-normal text-[14px]">
                                 (Minimum Long Sleeve Shirt for Men)
                               </span>
