@@ -217,9 +217,9 @@ const MainContent = () => {
                     ref={sc1Ref}
                     className={`${
                       sc1View ? "animate-scaleUp" : ""
-                    } w-full relative h-[480px]  opacity-0`}
+                    } w-full relative h-[500px]  opacity-0`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[480px] absolute top-0 z-0 " />
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[500px] absolute top-0 z-0 " />
                     <div className="relative z-10 p-[10px] flex items-center justify-center flex-col h-full">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center">
                         GATHERING EVENT
@@ -263,13 +263,14 @@ const MainContent = () => {
                         </div>
                       </div>
 
-                      <div className="mt-[10px] max-w-[300px]">
+                      <div className="mt-[10px] max-w-[380px]">
                         <p className="text-white text-center text-[18px]  tracking-[1px] mt-[20px]  ">
-                          Participants all team members who joined iNi ViE
-                          Hospitality
+                          Participation is exclusive to iNi ViE Hospitality team
+                          members (Staff/DW only, exclude trainee) who became
+                          part of our family maximum on
                           <span className="text-[#A2803B] font-bold">
                             {" "}
-                            before 14 January 2025
+                            January 31, 2025
                           </span>{" "}
                         </p>
                       </div>
