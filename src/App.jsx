@@ -181,9 +181,9 @@ const MainContent = () => {
                       </span>{" "}
                     </h1>
                     <p className="mt-[20px] text-white text-center text-[15px] tracking-[1px] leading-[180%]">
-                      We are thrilled to invite you to a special iNiViEnity
-                      Night Gathering! This gathering is a thank you for your
-                      dedication and a chance to connect with your colleague
+                      You are cordially invited to a special iNiViEnity Night
+                      Gathering! A night to celebrate, a moment to unwind, share
+                      laughter, and strengthen the bonds that make us who we are
                     </p>
                   </div>
                 </div>
