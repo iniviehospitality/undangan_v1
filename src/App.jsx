@@ -318,11 +318,11 @@ const MainContent = () => {
                 <div className="flex justify-center items-center relative z-[3] h-full ">
                   <div
                     ref={sc2Ref}
-                    className={`w-full relative h-[590px] ${
+                    className={`w-full relative h-[650px] ${
                       sc2View ? "animate-scaleUp" : ""
                     }`}
                   >
-                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[590px] absolute top-0 z-0 " />
+                    <div className="bg-white bg-opacity-20 blur-sm w-full h-[650px] absolute top-0 z-0 " />
                     <div className="relative z-10 py-[10px] px-5 flex items-center justify-center flex-col h-full ">
                       <h2 className="text-[#A2803B] font-bold text-[32px] text-center uppercase">
                         Grand Door Prizes
@@ -360,7 +360,7 @@ const MainContent = () => {
                         </div>
                       </div>
 
-                      <div className="mt-[30px] flex flex-col gap-[5px] max-w-[350px]">
+                      <div className="mt-[10px] flex flex-col gap-[5px] max-w-[350px]">
                         <p className="text-white  text-left text-[16px]  tracking-[1px]  ">
                           To be eligible for the gifts and doorprizes,{" "}
                           <span className="text-[#A2803B] font-bold">
@@ -368,19 +368,25 @@ const MainContent = () => {
                           </span>
                         </p>
                         <ol className="list-decimal text-white pl-[10px]">
-                          <li className="mt-5">
+                          <li className="mt-2">
                             <p className="text-[15px] text-white tracking-[1px]">
                               Follow the official Instagram accounts
                             </p>
                             <div className="flex justify-start gap-[10px] mt-2">
-                              <a href="#" className="flex gap-[5px]">
+                              <a
+                                href="https://www.instagram.com/inivielife/"
+                                className="flex gap-[5px]"
+                              >
                                 <FaInstagram className="text-[18px] text-[#aba7a7]" />
                                 <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
                                   @lifeatinivie
                                 </p>
                               </a>
 
-                              <a href="#" className="flex gap-[5px]">
+                              <a
+                                href="https://www.instagram.com/iniviehospitality/"
+                                className="flex gap-[5px]"
+                              >
                                 <FaInstagram className="text-[18px] text-[#aba7a7]" />
                                 <p className="text-[15px] tracking-[1px] text-[#A2803B] font-bold">
                                   @iniviehospitality
@@ -388,7 +394,7 @@ const MainContent = () => {
                               </a>
                             </div>
                           </li>
-                          <li className="mt-5">
+                          <li className="mt-2">
                             <span className="text-[15px] text-white tracking-[1px]  mt-5">
                               Join the{" "}
                               <a
@@ -399,6 +405,26 @@ const MainContent = () => {
                                 WeiNiViE Reward
                               </a>{" "}
                               membership program.
+                            </span>
+                          </li>
+                          <li className="mt-2">
+                            <span className="text-[15px] text-white tracking-[1px]  mt-5">
+                              Post Instagram story during iNiVienity Night
+                              Gathering, tag{" "}
+                              <a
+                                href="https://www.instagram.com/iniviehospitality/"
+                                target="_blank"
+                                className="text-[#A2803B] font-bold"
+                              >
+                                @iniviehospitality
+                              </a>{" "}
+                              <a
+                                href="https://www.instagram.com/inivielife/"
+                                target="_blank"
+                                className="text-[#A2803B] font-bold"
+                              >
+                                @lifeatinivie{" "}
+                              </a>{" "}
                             </span>
                           </li>
                         </ol>
